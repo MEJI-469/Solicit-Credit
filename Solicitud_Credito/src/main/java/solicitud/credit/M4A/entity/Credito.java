@@ -19,6 +19,7 @@ public class Credito{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private Long Id;
 	
+	private String CedSocioCredit;
 	private int NumSolicitud;
 	
 	@Column(name="fech_soli")
@@ -38,6 +39,12 @@ public class Credito{
 	}
 	public void setId(Long id) {
 		Id = id;
+	}	
+	public String getCedSocioCredit() {
+		return CedSocioCredit;
+	}
+	public void setCedSocioCredit(String cedSocioCredit) {
+		CedSocioCredit = cedSocioCredit;
 	}
 	public int getNumSolicitud() {
 		return NumSolicitud;

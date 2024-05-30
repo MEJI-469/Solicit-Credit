@@ -15,6 +15,7 @@ public class Empresa implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
+	private String cedula_socio;
 	private String OcupaEmpresa;
 	private String NomEmpresa;
 	private String DirecEmpresa;
@@ -22,12 +23,17 @@ public class Empresa implements Serializable{
 	private int AniosEmpresa;
 	private String TelefEmpresa;
 	
-	
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+	public String getCedula_socio() {
+		return cedula_socio;
+	}
+	public void setCedula_socio(String cedula_socio) {
+		this.cedula_socio = cedula_socio;
 	}
 	public String getOcupaEmpresa() {
 		return OcupaEmpresa;
@@ -66,5 +72,6 @@ public class Empresa implements Serializable{
 		TelefEmpresa = telefEmpresa;
 	}
 	
+	private static final long serialVersionUID = 1L;
 	
 }

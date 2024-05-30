@@ -15,11 +15,20 @@ public class Inmobiliario {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long Id;
 	
+	private String CedSocioInmobi;
 	private String DireccInmobi;
 	private Double ValorInmobi;
 	private Boolean HipotecInmobi;
 	private String InstituInmobi;
 	private String TipPropieInmobi;
+	
+	
+	public String getCedSocioInmobi() {
+		return CedSocioInmobi;
+	}
+	public void setCedSocioInmobi(String cedSocioInmobi) {
+		CedSocioInmobi = cedSocioInmobi;
+	}
 	public Long getId() {
 		return Id;
 	}

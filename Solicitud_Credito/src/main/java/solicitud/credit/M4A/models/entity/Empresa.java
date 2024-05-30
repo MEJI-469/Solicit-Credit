@@ -1,4 +1,4 @@
-package solicitud.credit.M4A.entity;
+package solicitud.credit.M4A.models.entity;
 
 import java.io.Serializable;
 

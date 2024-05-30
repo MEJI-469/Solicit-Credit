@@ -1,4 +1,4 @@
-package solicitud.credit.M4A.entity;
+package solicitud.credit.M4A.models.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

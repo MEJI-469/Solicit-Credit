@@ -1,4 +1,4 @@
-package solicitud.credit.M4A.entity;
+package solicitud.credit.M4A.models.entity;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="socios")
-public class socio implements Serializable{
+public class Socio implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -25,7 +25,6 @@ public class Credito{
 	@Temporal(TemporalType.DATE)
 	private Date FechSoli;
 	
-	
 	private int PlazoCredit;
 	private Double ValSoliCredit;
 	private String ProvinciaCredit;

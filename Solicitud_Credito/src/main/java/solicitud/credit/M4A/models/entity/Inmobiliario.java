@@ -14,11 +14,6 @@ import jakarta.persistence.UniqueConstraint;
 
 public class Inmobiliario implements Serializable{
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long Id;
@@ -73,5 +68,9 @@ public class Inmobiliario implements Serializable{
 	public void setTipPropieInmobi(String tipPropieInmobi) {
 		TipPropieInmobi = tipPropieInmobi;
 	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 }

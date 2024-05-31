@@ -1,5 +1,7 @@
 package solicitud.credit.M4A.models.entity;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,8 +12,13 @@ import jakarta.persistence.UniqueConstraint;
 @Entity
 @Table(name="inmobiliarios", uniqueConstraints = {@UniqueConstraint(columnNames = {"CedSocioInmobi"})})
 
-public class Inmobiliario {
+public class Inmobiliario implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long Id;

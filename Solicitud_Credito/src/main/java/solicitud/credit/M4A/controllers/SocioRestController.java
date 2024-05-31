@@ -23,6 +23,7 @@ public class SocioRestController {
 		return socioService.findAll();
 	}
 	
-	
+	// url para testear los datos
+	//http://localhost:8080/api/socios
 	
 }

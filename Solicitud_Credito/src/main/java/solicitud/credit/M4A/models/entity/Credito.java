@@ -1,6 +1,7 @@
 package solicitud.credit.M4A.models.entity;
 
-import java.sql.Date;
+import java.io.Serializable;
+import java.util.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,21 +12,17 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+
 @Entity
 @Table(name="creditos")
+public class Credito implements Serializable{
 
-public class Credito{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private Long Id;
 	
 	private String CedSocioCredit;
 	private int NumSolicitud;
-	
-	@Column(name="fech_soli")
-	@Temporal(TemporalType.DATE)
-	private Date FechSoli;
-	
 	private int PlazoCredit;
 	private Double ValSoliCredit;
 	private String ProvinciaCredit;
@@ -34,6 +31,16 @@ public class Credito{
 	private String TipoCredit;
 	private String FormPagCredit;
 	private String EstadoCredit;
+	
+	@Column(name="fech_soli")
+	@Temporal(TemporalType.DATE)
+	private Date FechSoli;
+	
+	@PrePersist
+	public void prePersist() {
+		FechSoli = new Date();
+	}
+	
 	public Long getId() {
 		return Id;
 	}
@@ -52,7 +59,6 @@ public class Credito{
 	public void setNumSolicitud(int numSolicitud) {
 		NumSolicitud = numSolicitud;
 	}
-	@PrePersist
 	public Date getFechSoli() {
 		return FechSoli;
 	}
@@ -108,5 +114,9 @@ public class Credito{
 		EstadoCredit = estadoCredit;
 	}
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 }

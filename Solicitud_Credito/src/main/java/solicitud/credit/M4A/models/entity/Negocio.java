@@ -12,11 +12,12 @@ import jakarta.persistence.Table;
 @Table(name = "negocios")
 public class Negocio implements Serializable{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private int id;
 	
+	@Id
 	private String ruc;
+	
 	private String cedula_socio;
 	private int antiguedad;
 	private int num_empleados;

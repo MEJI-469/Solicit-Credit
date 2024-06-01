@@ -23,7 +23,7 @@ public class Credito implements Serializable{
 	private Long id;
 	
 	private String ced_socio_credit;
-	private int NumSolicitud;
+	private int num_solicitud;
 	private int plazo_credit;
 	private Double val_soli_credit;
 	private String provincia_credit;
@@ -62,15 +62,13 @@ public class Credito implements Serializable{
 	}
 
 
-	public int getNumSolicitud() {
-		return NumSolicitud;
+	public int getNum_solicitud() {
+		return num_solicitud;
 	}
 
-
-	public void setNumSolicitud(int numSolicitud) {
-		NumSolicitud = numSolicitud;
+	public void setNum_solicitud(int num_solicitud) {
+		this.num_solicitud = num_solicitud;
 	}
-
 
 	public int getPlazo_credit() {
 		return plazo_credit;

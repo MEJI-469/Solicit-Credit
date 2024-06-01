@@ -7,14 +7,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="ingresos")
+@Table(name="ingresos", uniqueConstraints = {@UniqueConstraint(columnNames = {"CedSocioIngr"})})
 public class Ingreso implements Serializable{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -97,5 +94,10 @@ public class Ingreso implements Serializable{
 	public void setSueldSocioIngr(Double sueldSocioIngr) {
 		SueldSocioIngr = sueldSocioIngr;
 	}
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 }

@@ -49,20 +49,61 @@ public class Socio implements Serializable{
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "cedula_socio")
+	private List<Gastos> gastos;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "CedSocioIngr")
+	private List<Ingreso> ingreso;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "cedula_socio")
+	private List<Negocio> negocio;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "cedula_socio")
+	private List<Registros_Personales> registros;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "cedula_socio")
 	private List<Conyugue> conyugue;
 	
 	
-	public List<Conyugue> getConyugue() {
-		return conyugue;
-	}
-	public void setConyugue(List<Conyugue> conyugue) {
-		this.conyugue = conyugue;
-	}
+	
 	public List<Inmobiliario> getInmobiliario() {
 		return inmobiliario;
 	}
 	public void setInmobiliario(List<Inmobiliario> inmobiliario) {
 		this.inmobiliario = inmobiliario;
+	}
+	public List<Gastos> getGastos() {
+		return gastos;
+	}
+	public void setGastos(List<Gastos> gastos) {
+		this.gastos = gastos;
+	}
+	public List<Ingreso> getIngreso() {
+		return ingreso;
+	}
+	public void setIngreso(List<Ingreso> ingreso) {
+		this.ingreso = ingreso;
+	}
+	public List<Negocio> getNegocio() {
+		return negocio;
+	}
+	public void setNegocio(List<Negocio> negocio) {
+		this.negocio = negocio;
+	}
+	public List<Registros_Personales> getRegistros() {
+		return registros;
+	}
+	public void setRegistros(List<Registros_Personales> registros) {
+		this.registros = registros;
+	}
+	public List<Conyugue> getConyugue() {
+		return conyugue;
+	}
+	public void setConyugue(List<Conyugue> conyugue) {
+		this.conyugue = conyugue;
 	}
 	public Long getId() {
 		return id;

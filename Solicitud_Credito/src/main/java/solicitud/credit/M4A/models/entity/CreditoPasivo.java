@@ -15,20 +15,20 @@ public class CreditoPasivo implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 	
 	private String cedula_socio;
 	private Double deudalmacredpas;
-	private Double DeudTarjCredPas;
-	private Double DeudProvCredPas;
-	private Double DeudBancCredPas;
-	private Double DeudCoopCredPas;
+	private Double deud_tarj_cred_pas;
+	private Double deud_prov_cred_pas;
+	private Double deud_banc_cred_pas;
+	private Double deud_coop_cred_pas;
 	
 	public Long getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getCedula_socio() {
 		return cedula_socio;
@@ -43,31 +43,32 @@ public class CreditoPasivo implements Serializable {
 	public void setDeudalmacredpas(Double deudalmacredpas) {
 		this.deudalmacredpas = deudalmacredpas;
 	}
-	public Double getDeudTarjCredPas() {
-		return DeudTarjCredPas;
-	}
-	public void setDeudTarjCredPas(Double deudTarjCredPas) {
-		DeudTarjCredPas = deudTarjCredPas;
-	}
-	public Double getDeudProvCredPas() {
-		return DeudProvCredPas;
-	}
-	public void setDeudProvCredPas(Double deudProvCredPas) {
-		DeudProvCredPas = deudProvCredPas;
-	}
-	public Double getDeudBancCredPas() {
-		return DeudBancCredPas;
-	}
-	public void setDeudBancCredPas(Double deudBancCredPas) {
-		DeudBancCredPas = deudBancCredPas;
-	}
-	public Double getDeudCoopCredPas() {
-		return DeudCoopCredPas;
-	}
-	public void setDeudCoopCredPas(Double deudCoopCredPas) {
-		DeudCoopCredPas = deudCoopCredPas;
-	}
 	
+	public Double getDeud_tarj_cred_pas() {
+		return deud_tarj_cred_pas;
+	}
+	public void setDeud_tarj_cred_pas(Double deud_tarj_cred_pas) {
+		this.deud_tarj_cred_pas = deud_tarj_cred_pas;
+	}
+	public Double getDeud_prov_cred_pas() {
+		return deud_prov_cred_pas;
+	}
+	public void setDeud_prov_cred_pas(Double deud_prov_cred_pas) {
+		this.deud_prov_cred_pas = deud_prov_cred_pas;
+	}
+	public Double getDeud_banc_cred_pas() {
+		return deud_banc_cred_pas;
+	}
+	public void setDeud_banc_cred_pas(Double deud_banc_cred_pas) {
+		this.deud_banc_cred_pas = deud_banc_cred_pas;
+	}
+	public Double getDeud_coop_cred_pas() {
+		return deud_coop_cred_pas;
+	}
+	public void setDeud_coop_cred_pas(Double deud_coop_cred_pas) {
+		this.deud_coop_cred_pas = deud_coop_cred_pas;
+	}
+
 	/**
 	 * 
 	 */

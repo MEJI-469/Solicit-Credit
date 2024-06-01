@@ -18,12 +18,12 @@ public class Empresa implements Serializable{
 	private Long id;
 	
 	private String cedula_socio;
-	private String OcupaEmpresa;
-	private String NomEmpresa;
-	private String DirecEmpresa;
-	private String AreaEmpresa;
-	private int AniosEmpresa;
-	private String TelefEmpresa;
+	private String ocupa_empresa;
+	private String nom_empresa;
+	private String direc_empresa;
+	private String area_empresa;
+	private int anios_empresa;
+	private String telef_empresa;
 	
 	public Long getId() {
 		return id;
@@ -37,43 +37,44 @@ public class Empresa implements Serializable{
 	public void setCedula_socio(String cedula_socio) {
 		this.cedula_socio = cedula_socio;
 	}
-	public String getOcupaEmpresa() {
-		return OcupaEmpresa;
-	}
-	public void setOcupaEmpresa(String ocupaEmpresa) {
-		OcupaEmpresa = ocupaEmpresa;
-	}
-	public String getNomEmpresa() {
-		return NomEmpresa;
-	}
-	public void setNomEmpresa(String nomEmpresa) {
-		NomEmpresa = nomEmpresa;
-	}
-	public String getDirecEmpresa() {
-		return DirecEmpresa;
-	}
-	public void setDirecEmpresa(String direcEmpresa) {
-		DirecEmpresa = direcEmpresa;
-	}
-	public String getAreaEmpresa() {
-		return AreaEmpresa;
-	}
-	public void setAreaEmpresa(String areaEmpresa) {
-		AreaEmpresa = areaEmpresa;
-	}
-	public int getAniosEmpresa() {
-		return AniosEmpresa;
-	}
-	public void setAniosEmpresa(int aniosEmpresa) {
-		AniosEmpresa = aniosEmpresa;
-	}
-	public String getTelefEmpresa() {
-		return TelefEmpresa;
-	}
-	public void setTelefEmpresa(String telefEmpresa) {
-		TelefEmpresa = telefEmpresa;
-	}
 	
+	public String getOcupa_empresa() {
+		return ocupa_empresa;
+	}
+	public void setOcupa_empresa(String ocupa_empresa) {
+		this.ocupa_empresa = ocupa_empresa;
+	}
+	public String getNom_empresa() {
+		return nom_empresa;
+	}
+	public void setNom_empresa(String nom_empresa) {
+		this.nom_empresa = nom_empresa;
+	}
+	public String getDirec_empresa() {
+		return direc_empresa;
+	}
+	public void setDirec_empresa(String direc_empresa) {
+		this.direc_empresa = direc_empresa;
+	}
+	public String getArea_empresa() {
+		return area_empresa;
+	}
+	public void setArea_empresa(String area_empresa) {
+		this.area_empresa = area_empresa;
+	}
+	public int getAnios_empresa() {
+		return anios_empresa;
+	}
+	public void setAnios_empresa(int anios_empresa) {
+		this.anios_empresa = anios_empresa;
+	}
+	public String getTelef_empresa() {
+		return telef_empresa;
+	}
+	public void setTelef_empresa(String telef_empresa) {
+		this.telef_empresa = telef_empresa;
+	}
+
 	private static final long serialVersionUID = 1L;
 	
 }

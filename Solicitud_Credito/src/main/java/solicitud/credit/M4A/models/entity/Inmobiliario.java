@@ -10,64 +10,77 @@ import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="inmobiliarios", uniqueConstraints = {@UniqueConstraint(columnNames = {"CedSocioInmobi"})})
+@Table(name="inmobiliarios", uniqueConstraints = {@UniqueConstraint(columnNames = {"ced_socio_inmobi"})})
 
 public class Inmobiliario implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 	
-	private String CedSocioInmobi;
-	private String DireccInmobi;
-	private Double ValorInmobi;
-	private Boolean HipotecInmobi;
-	private String InstituInmobi;
-	private String TipPropieInmobi;
+	private String ced_socio_inmobi;
+	private String direcc_inmobi;
+	private Double valor_inmobi;
+	private Boolean hipotec_inmobi;
+	private String institu_inmobi;
+	private String tip_propie_inmobi;
 	
-	
-	public String getCedSocioInmobi() {
-		return CedSocioInmobi;
-	}
-	public void setCedSocioInmobi(String cedSocioInmobi) {
-		CedSocioInmobi = cedSocioInmobi;
-	}
 	public Long getId() {
-		return Id;
+		return id;
 	}
+
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
-	public String getDireccInmobi() {
-		return DireccInmobi;
+
+	public String getCed_socio_inmobi() {
+		return ced_socio_inmobi;
 	}
-	public void setDireccInmobi(String direccInmobi) {
-		DireccInmobi = direccInmobi;
+
+	public void setCed_socio_inmobi(String ced_socio_inmobi) {
+		this.ced_socio_inmobi = ced_socio_inmobi;
 	}
-	public Double getValorInmobi() {
-		return ValorInmobi;
+
+	public String getDirecc_inmobi() {
+		return direcc_inmobi;
 	}
-	public void setValorInmobi(Double valorInmobi) {
-		ValorInmobi = valorInmobi;
+
+	public void setDirecc_inmobi(String direcc_inmobi) {
+		this.direcc_inmobi = direcc_inmobi;
 	}
-	public Boolean getHipotecInmobi() {
-		return HipotecInmobi;
+
+	public Double getValor_inmobi() {
+		return valor_inmobi;
 	}
-	public void setHipotecInmobi(Boolean hipotecInmobi) {
-		HipotecInmobi = hipotecInmobi;
+
+	public void setValor_inmobi(Double valor_inmobi) {
+		this.valor_inmobi = valor_inmobi;
 	}
-	public String getInstituInmobi() {
-		return InstituInmobi;
+
+	public Boolean getHipotec_inmobi() {
+		return hipotec_inmobi;
 	}
-	public void setInstituInmobi(String instituInmobi) {
-		InstituInmobi = instituInmobi;
+
+	public void setHipotec_inmobi(Boolean hipotec_inmobi) {
+		this.hipotec_inmobi = hipotec_inmobi;
 	}
-	public String getTipPropieInmobi() {
-		return TipPropieInmobi;
+
+	public String getInstitu_inmobi() {
+		return institu_inmobi;
 	}
-	public void setTipPropieInmobi(String tipPropieInmobi) {
-		TipPropieInmobi = tipPropieInmobi;
+
+	public void setInstitu_inmobi(String institu_inmobi) {
+		this.institu_inmobi = institu_inmobi;
 	}
+
+	public String getTip_propie_inmobi() {
+		return tip_propie_inmobi;
+	}
+
+	public void setTip_propie_inmobi(String tip_propie_inmobi) {
+		this.tip_propie_inmobi = tip_propie_inmobi;
+	}
+
 	/**
 	 * 
 	 */

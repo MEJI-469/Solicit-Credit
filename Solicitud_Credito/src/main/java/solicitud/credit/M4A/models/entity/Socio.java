@@ -44,7 +44,7 @@ public class Socio implements Serializable{
 	private String propietario;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "CedSocioInmobi")
+	@JoinColumn(name = "ced_socio_inmobi")
 	private List<Inmobiliario> inmobiliario;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
@@ -68,11 +68,11 @@ public class Socio implements Serializable{
 	private List<Conyugue> conyugue;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "CedSocioCredit")
+	@JoinColumn(name = "ced_socio_credit")
 	private List<Credito> credito;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "CedSocioCredit")
+	@JoinColumn(name = "ced_socio_credit_act")
 	private List<CreditoActivo> creditoactivo;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

@@ -7,14 +7,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 
 @Entity
-@Table(name="creditos_pasivos")
+@Table(name="creditos_pasivos", uniqueConstraints = {@UniqueConstraint(columnNames = {"cedula_socio"})})
 public class CreditoPasivo implements Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -68,4 +65,9 @@ public class CreditoPasivo implements Serializable {
 	public void setDeudCoopCredPas(Double deudCoopCredPas) {
 		DeudCoopCredPas = deudCoopCredPas;
 	}
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 }

@@ -67,6 +67,21 @@ public class Socio implements Serializable{
 	@JoinColumn(name = "cedula_socio")
 	private List<Conyugue> conyugue;
 	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "CedSocioCredit")
+	private List<Credito> credito;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "CedSocioCredit")
+	private List<CreditoActivo> creditoactivo;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "cedula_socio")
+	private List<CreditoPasivo> creditopasivo;
+	
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "cedula_socio")
+	private List<Empresa> empresa;
 	
 	
 	public List<Inmobiliario> getInmobiliario() {

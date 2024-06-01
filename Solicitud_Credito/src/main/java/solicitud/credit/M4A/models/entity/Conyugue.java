@@ -15,8 +15,7 @@ import jakarta.persistence.UniqueConstraint;
 public class Conyugue implements Serializable{
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private String cedula;
 	
 	private String cedula_socio;
 	private String nombre;
@@ -30,11 +29,12 @@ public class Conyugue implements Serializable{
 	private String telefono;
 	
 	
-	public Long getId() {
-		return id;
+	
+	public String getCedula() {
+		return cedula;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setCedula(String cedula) {
+		this.cedula = cedula;
 	}
 	public String getCedula_socio() {
 		return cedula_socio;

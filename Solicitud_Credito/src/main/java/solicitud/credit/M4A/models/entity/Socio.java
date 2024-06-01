@@ -52,7 +52,7 @@ public class Socio implements Serializable{
 	private List<Gastos> gastos;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "CedSocioIngr")
+	@JoinColumn(name = "ced_socio_ingr")
 	private List<Ingreso> ingreso;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

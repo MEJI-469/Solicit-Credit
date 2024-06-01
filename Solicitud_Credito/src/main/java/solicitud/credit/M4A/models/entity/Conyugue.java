@@ -25,7 +25,7 @@ public class Conyugue implements Serializable{
 	private String empresa;
 	private String direccion;
 	private String area;
-	private int años;
+	private int anios;
 	private String telefono;
 	
 	
@@ -84,11 +84,11 @@ public class Conyugue implements Serializable{
 	public void setArea(String area) {
 		this.area = area;
 	}
-	public int getAños() {
-		return años;
+	public int getAnios() {
+		return anios;
 	}
-	public void setAños(int años) {
-		this.años = años;
+	public void setAnios(int anios) {
+		this.anios = anios;
 	}
 	public String getTelefono() {
 		return telefono;

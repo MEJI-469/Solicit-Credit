@@ -48,7 +48,7 @@ INSERT INTO inmobiliarios (id, CedSocioInmobi, DireccionInmobi, ValorInmobi, Hip
 
 /************************************************************/    
 
-INSERT INTO conyugues (cedula, cedula_socio, Nombre, fecha_nac, profesion, ocupacion, empresa, direccion, area, años, telefono) VALUES
+INSERT INTO conyugues (cedula, cedula_socio, Nombre, fecha_nac, profesion, ocupacion, empresa, direccion, area, anios, telefono) VALUES
 ('0102040506', '0104050203', 'Juan Perez', '1975-05-15', 'Ingeniero', 'Gerente', 'Empresa A', 'Calle 1', 'Administración', 10, '0991234567'),
 ('0203040506', '0205060304', 'Ana Gomez', '1980-06-20', 'Abogada', 'Consultora', 'Empresa B', 'Calle 2', 'Legal', 8, '0992345678'),
 ('0304050607', '0306070405', 'Luis Lopez', '1985-07-25', 'Médico', 'Doctor', 'Hospital C', 'Calle 3', 'Salud', 12, '0993456789'),

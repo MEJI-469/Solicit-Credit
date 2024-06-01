@@ -18,11 +18,12 @@ public class CreditoPasivo implements Serializable {
 	private Long Id;
 	
 	private String cedula_socio;
-	private Double DeudAlmaCredPas;
+	private Double deudalmacredpas;
 	private Double DeudTarjCredPas;
 	private Double DeudProvCredPas;
 	private Double DeudBancCredPas;
 	private Double DeudCoopCredPas;
+	
 	public Long getId() {
 		return Id;
 	}
@@ -35,11 +36,12 @@ public class CreditoPasivo implements Serializable {
 	public void setCedula_socio(String cedula_socio) {
 		this.cedula_socio = cedula_socio;
 	}
-	public Double getDeudAlmaCredPas() {
-		return DeudAlmaCredPas;
+	
+	public Double getDeudalmacredpas() {
+		return deudalmacredpas;
 	}
-	public void setDeudAlmaCredPas(Double deudAlmaCredPas) {
-		DeudAlmaCredPas = deudAlmaCredPas;
+	public void setDeudalmacredpas(Double deudalmacredpas) {
+		this.deudalmacredpas = deudalmacredpas;
 	}
 	public Double getDeudTarjCredPas() {
 		return DeudTarjCredPas;

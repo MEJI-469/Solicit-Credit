@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import solicitud.credit.M4A.models.entity.Socio;
 
-public interface ISocioDao extends CrudRepository<Socio, Long>{
+public interface ISocioDao extends CrudRepository<Socio, String>{
 
 }

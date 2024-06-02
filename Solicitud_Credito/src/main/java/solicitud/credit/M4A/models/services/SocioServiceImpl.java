@@ -22,6 +22,25 @@ public class SocioServiceImpl implements ISocioService{
 		return (List<Socio>) SocioDao.findAll();
 	}
 	
+	@Override
+	@Transactional (readOnly = true)
+	public Socio findById(String cedula) {
+		// TODO Auto-generated method stub
+		return SocioDao.findById(cedula).orElse(null);
+	}
 	
+	@Override
+	@Transactional
+	public Socio save(Socio socio) {
+		// TODO Auto-generated method stub
+		return SocioDao.save(socio);
+	}
+	
+	@Override
+	@Transactional
+	public void delete(String cedula) {
+		// TODO Auto-generated method stub
+		SocioDao.deleteById(cedula);
+	}
 
 }
